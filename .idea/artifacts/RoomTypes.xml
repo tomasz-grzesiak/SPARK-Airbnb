@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RoomTypes">
+    <output-path>$PROJECT_DIR$/out/artifacts/RoomTypes</output-path>
+    <root id="archive" name="RoomTypes.jar" />
+  </artifact>
+</component>

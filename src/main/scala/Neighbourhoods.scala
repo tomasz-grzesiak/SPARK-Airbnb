@@ -13,7 +13,7 @@ object Neighbourhoods {
       .option("quote", "\"")
       .option("escape", "\"")
       .option("multiline", true)
-      .csv("labs/spark/BerlinListings.csv")
+      .csv("BerlinListings.csv")
       .cache()
 
     val parisListingsDS = sqlContext.read.format("org.apache.spark.csv")
@@ -22,7 +22,7 @@ object Neighbourhoods {
       .option("quote", "\"")
       .option("escape", "\"")
       .option("multiline", true)
-      .csv("labs/spark/ParisListings.csv")
+      .csv("ParisListings.csv")
       .cache()
 
     val madridListingsDS = sqlContext.read.format("org.apache.spark.csv")
@@ -30,7 +30,7 @@ object Neighbourhoods {
       .option("quote", "\"")
       .option("escape", "\"")
       .option("multiline", true)
-      .csv("labs/spark/MadridListings.csv")
+      .csv("MadridListings.csv")
       .cache()
 
     val berlinNeighbourhoodsDS = berlinListingsDS

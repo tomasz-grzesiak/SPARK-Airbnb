@@ -56,7 +56,6 @@ spark.sql("""CREATE TABLE IF NOT EXISTS `facts` (
  `count` int,
  `availability` int,
  `price_sum` int,
- `score` int,
  `positive_review_count` int,
  `negative_review_count` int,
  `room_type_id` long,

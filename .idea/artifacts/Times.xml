@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Times">
+    <output-path>$PROJECT_DIR$/out/artifacts/Times</output-path>
+    <root id="archive" name="Times.jar">
+      <element id="module-output" name="SPARK_Airbnb" />
+    </root>
+  </artifact>
+</component>

@@ -13,7 +13,7 @@ object Times {
       .option("quote", "\"")
       .option("escape", "\"")
       .option("multiline", true)
-      .csv("labs/spark/BerlinCalendar.csv")
+      .csv("BerlinCalendar.csv")
       .cache()
 
     val madridCalendarDS = sqlContext.read.format("org.apache.spark.csv")
@@ -21,7 +21,7 @@ object Times {
       .option("quote", "\"")
       .option("escape", "\"")
       .option("multiline", true)
-      .csv("labs/spark/MadridCalendar.csv")
+      .csv("MadridCalendar.csv")
       .drop("adjusted_price", "minimum_nights", "maximum_nights")
       .cache()
 
@@ -30,7 +30,7 @@ object Times {
       option("quote", "\"").
       option("escape", "\"").
       option("multiline", true).
-      csv("labs/spark/ParisCalendar.csv").cache()
+      csv("ParisCalendar.csv").cache()
 
     val calendarDS = berlinCalendarDS
       .union(madridCalendarDS)
